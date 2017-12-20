@@ -56,8 +56,7 @@ if (project.plugins.hasPlugin('com.android.library')) {
             artifacts {
                 archives javadocJarTask, sourcesJarTask
             }
-        }
-        else {
+        } else {
             // Create a configuration we can publish from for each variant
             String configurationName = "archives${variant.name.capitalize()}"
             configurations.create(configurationName)
